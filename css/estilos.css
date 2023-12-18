@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&family=Cormorant+Garamond:ital,wght@1,500&family=DM+Serif+Display:ital@1&family=Gabarito&family=IBM+Plex+Mono&family=Libre+Baskerville:wght@700&family=Red+Hat+Display:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&family=Cormorant+Garamond:ital,wght@1,500&family=DM+Serif+Display:ital@1&family=Gabarito&family=IBM+Plex+Mono&family=Libre+Baskerville:wght@700&family=Red+Hat+Display:wght@300&family=Roboto+Mono:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+@keyframes cambio-color {
+  0% {
+    color: white; }
+  25% {
+    color: #ef43ef; }
+  50% {
+    color: white; }
+  75% {
+    color: #ef43ef; }
+  100% {
+    color: white; } }
+
+body {
+  background-color: #394651;
+  max-width: 1000px;
+  margin: auto; }
+
+header {
+  width: 100%;
+  height: 50px; }
+
+nav {
+  width: 100%;
+  height: 50px; }
+  nav ol {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #ef43ef;
+    border-radius: 35px; }
+    nav ol li {
+      height: 100%;
+      padding: 14px;
+      list-style: none;
+      text-align: center;
+      align-items: center; }
+      nav ol li:hover {
+        transform: scale(1.1);
+        transition: all 300ms ease; }
+      nav ol li a {
+        list-style: none;
+        color: black;
+        font-size: 16px;
+        font-family: "Gabarito", sans-serif; }
+        nav ol li a:hover {
+          color: white; }
+
+.home {
+  display: flex;
+  padding: 30px; }
+  .home .titulo-principal span {
+    font-family: "Gabarito", sans-serif;
+    color: #ef43ef;
+    font-size: 40px;
+    height: 60px;
+    padding: 6px; }
+  .home .titulo-principal h1 {
+    font-family: "Gabarito", sans-serif;
+    height: 60px;
+    padding: 10px; }
+  .home .titulo-principal .redes-sociales {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; }
+    .home .titulo-principal .redes-sociales a i {
+      color: white;
+      font-size: 35px; }
+      .home .titulo-principal .redes-sociales a i:hover {
+        transform: scale(1.1);
+        color: #ef43ef;
+        transition: all 300ms ease; }
+  .home .foto-perfil {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    left: 15%; }
+    .home .foto-perfil img {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      object-fit: fill; }
+      .home .foto-perfil img:hover {
+        transform: scale(1.1);
+        border-radius: 40%;
+        transition: all 300ms ease; }
+
+.about_me {
+  margin: 20px 0 20px 0; }
+  .about_me h2 {
+    width: 250px;
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+    animation: cambio-color 5s ease infinite;
+    user-select: none; }
+    .about_me h2:hover {
+      text-decoration: underline;
+      animation: all 3000ms ease;
+      color: #ef43ef; }
+  .about_me div {
+    padding: 30px; }
+    .about_me div p {
+      width: 100%;
+      font-size: 20px;
+      font-family: "Red Hat Display", sans-serif;
+      margin: 20px 0 20px 0;
+      color: white; }
+    .about_me div strong {
+      width: 100%;
+      font-family: "Gabarito", sans-serif;
+      font-size: 24px;
+      color: black; }
+
+.works {
+  margin: 20px 0 20px 0; }
+  .works h2 {
+    width: 250px;
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+    animation: cambio-color 5s ease infinite;
+    user-select: none; }
