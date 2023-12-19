@@ -1,6 +1,7 @@
 .home{
     display: flex;
     padding: 30px;
+    margin-top: 40px;
     .titulo-principal{
         span{
             font-family: $tipografia_principal;
@@ -46,31 +47,34 @@
             object-fit: fill;
             &:hover{
                 transform: scale(1.1);
-                border-radius: 40%;
-                transition: all 300ms ease;
+                border-radius: 42px 80px 42px 80px;
+                transition: all 300ms linear;
             }
         }
     }
 
 }
 
+.divisor-section{
+    background-color: $color-principal;
+    width: 70%;
+    height: 4px;
+    margin: 100px auto 100px auto;
+    border-radius: 55px;
+}
 
 .about_me {
     margin: 20px 0 20px 0;
+    padding: 20px;
     h2 {
-        width: 250px;
-        font-size: 30px;
+        width: 290px;
+        font-size: 36px;
         font-family: $tipografia_secundaria;
         animation: cambio-color 5s ease infinite;
         user-select: none;
-        &:hover{
-            text-decoration: underline;
-            animation: all 3000ms ease;
-            color: $color-principal;
-        }
+        margin-bottom: 60px;
     }
     div{
-        padding: 30px;
         p {
             width: 100%;
             font-size: 20px;
@@ -90,6 +94,7 @@
 
 .works {
     margin: 20px 0 20px 0;
+    padding: 20px;
     h2 {
         width: 250px;
         font-size: 30px;

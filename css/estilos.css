@@ -10,11 +10,11 @@
   0% {
     color: white; }
   25% {
-    color: #ef43ef; }
+    color: #ff81ff; }
   50% {
     color: white; }
   75% {
-    color: #ef43ef; }
+    color: #ff81ff; }
   100% {
     color: white; } }
 
@@ -36,14 +36,13 @@ nav {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    background-color: #ef43ef;
-    border-radius: 35px; }
+    background-color: #ff81ff;
+    border-radius: 35px 12px 35px 12px; }
     nav ol li {
       height: 100%;
       padding: 14px;
       list-style: none;
-      text-align: center;
-      align-items: center; }
+      text-align: center; }
       nav ol li:hover {
         transform: scale(1.1);
         transition: all 300ms ease; }
@@ -57,10 +56,11 @@ nav {
 
 .home {
   display: flex;
-  padding: 30px; }
+  padding: 30px;
+  margin-top: 40px; }
   .home .titulo-principal span {
     font-family: "Gabarito", sans-serif;
-    color: #ef43ef;
+    color: #ff81ff;
     font-size: 40px;
     height: 60px;
     padding: 6px; }
@@ -79,7 +79,7 @@ nav {
       font-size: 35px; }
       .home .titulo-principal .redes-sociales a i:hover {
         transform: scale(1.1);
-        color: #ef43ef;
+        color: #ff81ff;
         transition: all 300ms ease; }
   .home .foto-perfil {
     position: relative;
@@ -94,37 +94,41 @@ nav {
       object-fit: fill; }
       .home .foto-perfil img:hover {
         transform: scale(1.1);
-        border-radius: 40%;
-        transition: all 300ms ease; }
+        border-radius: 42px 80px 42px 80px;
+        transition: all 300ms linear; }
+
+.divisor-section {
+  background-color: #ff81ff;
+  width: 70%;
+  height: 4px;
+  margin: 100px auto 100px auto;
+  border-radius: 55px; }
 
 .about_me {
-  margin: 20px 0 20px 0; }
+  margin: 20px 0 20px 0;
+  padding: 20px; }
   .about_me h2 {
-    width: 250px;
-    font-size: 30px;
+    width: 290px;
+    font-size: 36px;
     font-family: "Courier New", Courier, monospace;
     animation: cambio-color 5s ease infinite;
-    user-select: none; }
-    .about_me h2:hover {
-      text-decoration: underline;
-      animation: all 3000ms ease;
-      color: #ef43ef; }
-  .about_me div {
-    padding: 30px; }
-    .about_me div p {
-      width: 100%;
-      font-size: 20px;
-      font-family: "Red Hat Display", sans-serif;
-      margin: 20px 0 20px 0;
-      color: white; }
-    .about_me div strong {
-      width: 100%;
-      font-family: "Gabarito", sans-serif;
-      font-size: 24px;
-      color: black; }
+    user-select: none;
+    margin-bottom: 60px; }
+  .about_me div p {
+    width: 100%;
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    margin: 20px 0 20px 0;
+    color: white; }
+  .about_me div strong {
+    width: 100%;
+    font-family: "Gabarito", sans-serif;
+    font-size: 24px;
+    color: black; }
 
 .works {
-  margin: 20px 0 20px 0; }
+  margin: 20px 0 20px 0;
+  padding: 20px; }
   .works h2 {
     width: 250px;
     font-size: 30px;
